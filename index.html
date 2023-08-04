@@ -9,11 +9,44 @@
     <body>
         <div class="form-container">
             <img class="background-image" src="roan-lavery-lvy_VvdLmnA-unsplash.jpg" height="618">
-            <form action="#" method="get">
-                <div class="input-container">
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first-name" placeholder="ex. Yusef">
+            <!-- <div><a href="https://unsplash.com/@roanlavery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Roan Lavery</a> on <a href="https://unsplash.com/photos/lvy_VvdLmnA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div> -->
+            <form class="sign-up-form" action="#" method="get">
+                <div class="intro">
+                    <p>This is not a real online service! However, your deepest dreams lie beyond filling this form, which does nothing because we don't have a server yet (or a service to begin with).</p>
+                    <p>You <i>know</i> you want to.</p>
                 </div>
+                <div class="form-row">
+                    <div class="input-container">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="ex. Yusef">
+                    </div>
+                    <div class="input-container">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="ex. Bakr">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="ex. Yusef123@example.com">
+                    </div>
+                    <div class="input-container">
+                        <lable for="phone-number">Phone Number</lable>
+                        <input type="tel" id="phone-number" name="phone-number">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-container">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="input-container">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="password">
+                    </div>
+                </div>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
             </form>
         </div>
     </body>
