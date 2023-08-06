@@ -17,8 +17,19 @@ body {
     justify-content: center;
 }
 
+.background-image-container {
+    position: relative;
+}
+
 .background-image {
     height: 100vh;
+}
+
+.image-credit {
+    font-size: 13px;
+    position: absolute;
+    top: 615px;
+    left: 27%;
 }
 
 .sign-up-form {
@@ -86,6 +97,7 @@ body {
     background-color: #8338ec;
     color: #dafbe5;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .1);
+    cursor: pointer;
 }
 
 .button-container button[type="submit"]:hover {
