@@ -5,15 +5,14 @@
 }
 
 body {
+    font-family: Helvetica, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #dafbe5; 
     margin: 0;
     background-color: rgb(25, 25, 25);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .form-container {
-    background-color: rgb(240, 240, 240);
+    background-color: #252627;
     display: flex;
     justify-content: center;
 }
@@ -23,50 +22,81 @@ body {
 }
 
 .sign-up-form {
-    width: 800px;
     display: flex;
     flex-direction: column;
 }
 
-.intro {
-    padding-top: 20px;
+.intro, .button-container {
     margin-left: 50px;
-    margin-bottom: 40px;
+}
+
+.intro {
+    padding: 50px 50px 40px 0;
+    font-weight: 600;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .form-controls {
-    padding: 20px 0;
+    padding: 20px 0 20px 50px;
     margin-bottom: 40px;
-    background-color: rgb(250, 250, 250);
+    background-color: #313335;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .form-row {
-    margin-left: 50px;
     display: flex;
-    gap: 65px
+    gap: 75px
 }
 
 .input-container {
     width: 250px;
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
+}
+
+.input-container label {
+    font-size: 10px;
 }
 
 .input-container input {
     height: 30px;
+    padding: 5px;
+    border: 2px solid #dafbe5;
+    border-radius: 10px;
 }
 
-.button-container {
-    margin-left: 50px;
+.input-container input:focus {
+    outline: solid 3px #141415;
 }
 
 .button-container button[type="submit"] {
-    width: 200px;
+    width: 175px;
     height: 50px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #8338ec;
+    color: #dafbe5;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .1);
+}
+
+.button-container button[type="submit"]:hover {
+    background-color: #7f32ec;
+}
+
+.button-container button[type="submit"]:active {
+    background-color: #741fea;
+}
+
+a {
+    text-decoration: none;
+    color: #8338ec;
 }
