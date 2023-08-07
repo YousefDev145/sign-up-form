@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Helvetica, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     color: #dafbe5; 
     margin: 0;
     background-color: rgb(25, 25, 25);
@@ -65,7 +65,7 @@ body {
 }
 
 .input-container {
-    width: 250px;
+    width: 270px;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -85,7 +85,28 @@ body {
 }
 
 .input-container input:focus {
-    outline: none;
+    outline: 2px solid black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+}
+
+#confirm-password.not-matching {
+    outline: solid 2px #FB3640;
+}
+
+#confirm-password + span {
+    position: relative;
+}
+
+#confirm-password.not-matching + span::after {
+    position: absolute;
+    font-size: 9px;
+    font-weight: 700;
+    content: 'PASSWORDS DO NOT MATCH';
+    padding: 2px 6px;
+    color: #dafbe5;
+    background-color: #FB3640;
+    left: 125px;
+    bottom: 40px
 }
 
 .button-container button[type="submit"] {
