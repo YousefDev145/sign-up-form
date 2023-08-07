@@ -77,13 +77,15 @@ body {
 
 .input-container input {
     height: 30px;
-    padding: 5px;
+    padding: 7px;
     border: 2px solid #dafbe5;
-    border-radius: 10px;
+    border-radius: 8px;
+    font-family: Helvetica, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
 }
 
 .input-container input:focus {
-    outline: solid 3px #141415;
+    outline: none;
 }
 
 .button-container button[type="submit"] {
