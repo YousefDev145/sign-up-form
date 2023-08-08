@@ -15,7 +15,6 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     color: #dafbe5; 
-    margin: 0;
     background-color: rgb(25, 25, 25);
 }
 
@@ -27,10 +26,14 @@ body {
 
 .background-image-container {
     position: relative;
+    display: flex;
 }
 
 .background-image {
-    height: 100vh;
+    /* padding: 0;
+    border: 0;
+    margin: 0; */
+    height: 638px;
 }
 
 .image-credit {
